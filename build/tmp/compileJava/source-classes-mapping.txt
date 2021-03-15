@@ -1,0 +1,24 @@
+com/jenya/Constants.java
+ com.jenya.Constants
+ com.jenya.Constants$CELL_STATUS
+ com.jenya.Constants$FIGURES
+com/jenya/model/Cell.java
+ com.jenya.model.Cell
+com/jenya/model/User.java
+ com.jenya.model.User
+com/jenya/model/ChessPiece.java
+ com.jenya.model.ChessPiece
+com/jenya/moving/Moving.java
+ com.jenya.moving.Moving
+com/jenya/moving/MovingImpl.java
+ com.jenya.moving.MovingImpl
+ com.jenya.moving.MovingImpl$1
+com/jenya/ui/ChessUtils.java
+ com.jenya.ui.ChessUtils
+com/jenya/Main.java
+ com.jenya.Main
+com/jenya/ui/ChessCanvas.java
+ com.jenya.ui.ChessCanvas
+ com.jenya.ui.ChessCanvas$1
+ com.jenya.ui.ChessCanvas$2
+ com.jenya.ui.ChessCanvas$2$1
