@@ -3,20 +3,16 @@ package com.jenya.model;
 import com.jenya.Constants.*;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class User {
     private String userName;
     private boolean isWhite = true;
-
 
     private ArrayList<ChessPiece> figures = new ArrayList<>(8);
 
     public User(boolean isWhite) {
         int row1 = isWhite?7:0;
         int row2 = isWhite?6:1;
-
         this.figures.add(new ChessPiece(FIGURES.HORSE, 1, row1));
         this.figures.add(new ChessPiece(FIGURES.HORSE, 6, row1));
         this.figures.add(new ChessPiece(FIGURES.BISHOP, 2, row1));
@@ -33,13 +29,9 @@ public class User {
         this.figures.add(new ChessPiece(FIGURES.PAWN, 5, row2));
         this.figures.add(new ChessPiece(FIGURES.PAWN, 6, row2));
         this.figures.add(new ChessPiece(FIGURES.PAWN, 7, row2));
-
     }
 
-
-    public ArrayList<ChessPiece> getFigures() {
-        return figures;
-    }
+    public ArrayList<ChessPiece> getFigures() { return figures; }
 
     public void setFigures(ArrayList<ChessPiece> figures) {
         this.figures = figures;
@@ -60,6 +52,5 @@ public class User {
     public void setWhite(boolean white) {
         isWhite = white;
     }
-
 
 }
