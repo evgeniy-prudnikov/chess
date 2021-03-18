@@ -5,8 +5,7 @@ import com.jenya.model.Cell;
 import com.jenya.model.ChessPiece;
 import com.jenya.model.User;
 import com.jenya.moving.MovingImpl;
-import com.jenya.ui.ChessUtils;
-import javafx.scene.Group;
+import com.jenya.ui.ChessCanvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
@@ -14,6 +13,7 @@ import java.util.ArrayList;
 
 import static com.jenya.Constants.*;
 import static com.jenya.ui.ChessUtils.drawFigure;
+import static com.jenya.ui.ChessUtils.drawText;
 
 public class Game implements Layout {
 
@@ -66,11 +66,11 @@ public class Game implements Layout {
 
                             if (piece == currentuser.getFigures().get(6)) {
                                 currentuser.getFigures().remove(piece);
-                                //TODO Make layout "Game over"
+                                ChessCanvas.currentLayout = new GameOver(isWhite);
+
                                 System.out.println("Game over; should be here");
                                 break;
                             } else {
-
                                 currentuser.getFigures().remove(piece);
                                 break;
                             }
@@ -115,9 +115,9 @@ public class Game implements Layout {
             }
         }
     }
+
     public void whoMoves(GraphicsContext gc, boolean isW) {
-        gc.setFill(isWhiteCertanlyWhite == isW?Color.WHITE:Color.BLACK);
-        gc.fillRect(WIDTH, 0, 300, HEIGHT);
+        drawText(gc, isWhiteCertanlyWhite == isW);
     }
 
 }

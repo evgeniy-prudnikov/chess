@@ -56,6 +56,7 @@ public class ChessCanvas extends Application {
         currentLayout = new GameStart();
         Group root = new Group();
         root.setOnMouseClicked(eventHandler);
+        root.setOnMouseMoved(new MouseUtils());
         Canvas canvas = new Canvas(WIDTH + 300, HEIGHT);
         GraphicsContext gcanvas = canvas.getGraphicsContext2D();
         root.getChildren().add(canvas);
