@@ -289,12 +289,12 @@ public class MovingImpl implements Moving{
                             available.add(cell);
                         }
                     }
-                } else {
+                }
                     cell = isCellFree(userWhite,userBlack, piece.getX(), piece.getY() + (isWhite?-1:1),isWhite);
                     if (cell.getStatus() == CELL_STATUS.FREE) {
                         available.add(cell);
                     }
-                }
+
             }
         }
         return available;

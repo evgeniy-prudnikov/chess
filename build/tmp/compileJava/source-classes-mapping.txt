@@ -1,33 +1,41 @@
-com/jenya/Constants.java
- com.jenya.Constants
- com.jenya.Constants$CELL_STATUS
- com.jenya.Constants$FIGURES
-com/jenya/model/ChessPiece.java
- com.jenya.model.ChessPiece
-com/jenya/model/Cell.java
- com.jenya.model.Cell
-com/jenya/ui/layout/Layout.java
- com.jenya.ui.layout.Layout
-com/jenya/moving/Moving.java
- com.jenya.moving.Moving
-com/jenya/model/User.java
- com.jenya.model.User
-com/jenya/moving/MovingImpl.java
- com.jenya.moving.MovingImpl
- com.jenya.moving.MovingImpl$1
-com/jenya/Main.java
- com.jenya.Main
 com/jenya/ui/ChessCanvas.java
  com.jenya.ui.ChessCanvas
  com.jenya.ui.ChessCanvas$1
  com.jenya.ui.ChessCanvas$2
  com.jenya.ui.ChessCanvas$2$1
-com/jenya/ui/MouseUtils.java
- com.jenya.ui.MouseUtils
-com/jenya/ui/ChessUtils.java
- com.jenya.ui.ChessUtils
+com/jenya/network/BroadcastSender.java
+ com.jenya.network.BroadcastSender
+com/jenya/network/BroadcastPocket.java
+ com.jenya.network.BroadcastPocket
+com/jenya/moving/Moving.java
+ com.jenya.moving.Moving
 com/jenya/ui/layout/GameOver.java
  com.jenya.ui.layout.GameOver
+com/jenya/ui/MouseUtils.java
+ com.jenya.ui.MouseUtils
+com/jenya/network/BroadcastReceiver.java
+ com.jenya.network.BroadcastReceiver
+com/jenya/network/NotImlementedYet.java
+ com.jenya.network.NotImlementedYet
+com/jenya/Constants.java
+ com.jenya.Constants
+ com.jenya.Constants$CELL_STATUS
+ com.jenya.Constants$FIGURES
+com/jenya/Main.java
+ com.jenya.Main
+com/jenya/model/User.java
+ com.jenya.model.User
+com/jenya/ui/layout/Layout.java
+ com.jenya.ui.layout.Layout
+com/jenya/ui/ChessUtils.java
+ com.jenya.ui.ChessUtils
+com/jenya/model/Cell.java
+ com.jenya.model.Cell
+com/jenya/model/ChessPiece.java
+ com.jenya.model.ChessPiece
+com/jenya/moving/MovingImpl.java
+ com.jenya.moving.MovingImpl
+ com.jenya.moving.MovingImpl$1
 com/jenya/ui/layout/GameStart.java
  com.jenya.ui.layout.GameStart
 com/jenya/ui/layout/Game.java

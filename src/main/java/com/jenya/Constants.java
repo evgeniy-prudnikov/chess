@@ -2,6 +2,9 @@ package com.jenya;
 
 public class Constants {
 
+    public static final byte[] BROADCAST = new byte[]{(byte)255,(byte)255,(byte)255,(byte)255};
+    public static final int UDP_RECEIVE_PORT = 8080;
+    public static final int POCKET_SIZE = 512;
     public static final int HEIGHT = 640;
     public static final int WIDTH = HEIGHT;
     public static final int FIGURE_SIZE = HEIGHT / 8;

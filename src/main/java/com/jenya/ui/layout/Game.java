@@ -10,6 +10,9 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import java.util.ArrayList;
+import com.jenya.network.BroadcastPocket;
+import com.jenya.network.BroadcastReceiver;
+import com.jenya.network.BroadcastSender;
 
 import static com.jenya.Constants.*;
 import static com.jenya.ui.ChessUtils.drawFigure;
@@ -30,9 +33,9 @@ public class Game implements Layout {
     public User userWhite = new User(true);
     public User userBlack = new User(false);
     public ArrayList<Cell> cells = new ArrayList<>();
+    BroadcastPocket pocket = new BroadcastPocket();
 
-    public void handleEvent(MouseEvent event)
-    {
+    public void handleEvent(MouseEvent event) {
         int x = (int) event.getX() / FIGURE_SIZE;
         int y = (int) event.getY() / FIGURE_SIZE;
         final User currentUser = isWhite?userWhite:userBlack;
@@ -54,6 +57,7 @@ public class Game implements Layout {
             switch (chossenCell.getStatus())
             {
                 case FREE:
+
                     moving.move(selectedPiece, x, y);
                     selectedPiece = null;
                     cells.clear();
